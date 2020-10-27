@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7FD121E2-26CB-4D40-B26E-7EA325DA30D4}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		.Build\GenerateComplementaryAssemblyInfo.targets = .Build\GenerateComplementaryAssemblyInfo.targets
+		.Build\PreparePackageReleaseNotesFromFiles.targets = .Build\PreparePackageReleaseNotesFromFiles.targets
+		PublicKey.snk = PublicKey.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{EECB56C4-4A16-41E8-B2AD-4B05831CB410}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		.vsconfig = .vsconfig
+		CommandLine.sln.vsspell = CommandLine.sln.vsspell
+		..\GitVersion.yml = ..\GitVersion.yml
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{BDF7066C-A817-4305-8035-58B7AC6EC398}"
+	ProjectSection(SolutionItems) = preProject
+		..\CHANGELOG.md = ..\CHANGELOG.md
+		..\CODE_OF_CONDUCT.md = ..\CODE_OF_CONDUCT.md
+		..\CONTRIBUTING.md = ..\CONTRIBUTING.md
+		..\LICENSE = ..\LICENSE
+		PackageReleaseNotes.txt = PackageReleaseNotes.txt
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{5E51341F-EB26-4B58-B955-F9BD0E2F445E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5680AB07-B8AE-4311-8BFC-5ADD17F0305B}
+	EndGlobalSection
+EndGlobal

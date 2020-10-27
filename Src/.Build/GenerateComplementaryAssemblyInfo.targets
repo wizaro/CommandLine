@@ -1,0 +1,59 @@
+﻿<Project>
+  <PropertyGroup>
+    <GenerateAssemblyInfo2 Condition="'$(GenerateAssemblyInfo2)' == ''">true</GenerateAssemblyInfo2>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GenerateAssemblyInfo2)' == 'true'">
+    <GeneratedAssemblyInfo2File Condition="'$(GeneratedAssemblyInfo2File)' == ''">$(IntermediateOutputPath)$(MSBuildProjectName).AssemblyInfo2$(DefaultLanguageSourceExtension)</GeneratedAssemblyInfo2File>
+    <CLSCompliant Condition="'$(CLSCompliant)' == ''">false</CLSCompliant>
+    <ComVisible Condition="'$(ComVisible)' == ''">false</ComVisible>
+  </PropertyGroup>
+
+  <Target
+    Name="GenerateAssemblyInfo2"
+    BeforeTargets="BeforeCompile;CoreCompile"
+    DependsOnTargets="PrepareForBuild;CoreGenerateAssemblyInfo2"
+    Condition="'$(GenerateAssemblyInfo2)' == 'true'" />
+
+  <Target Name="CreateGeneratedAssemblyInfo2InputsCacheFile">
+    <PropertyGroup>
+      <GeneratedAssemblyInfo2InputsCacheFile>$(IntermediateOutputPath)$(MSBuildProjectName).AssemblyInfo2Inputs.cache</GeneratedAssemblyInfo2InputsCacheFile>
+    </PropertyGroup>
+    <Hash ItemsToHash="$(CLSCompliant);$(ComVisible)">
+      <Output TaskParameter="HashResult" PropertyName="_AssemblyAttributes2Hash" />
+    </Hash>
+    <WriteLinesToFile Lines="$(_AssemblyAttributes2Hash)" File="$(GeneratedAssemblyInfo2InputsCacheFile)" Overwrite="True" WriteOnlyWhenDifferent="True" />
+    <ItemGroup>
+      <FileWrites Include="$(GeneratedAssemblyInfo2InputsCacheFile)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CoreGenerateAssemblyInfo2"
+          Condition="'$(Language)' == 'VB' or '$(Language)' == 'C#'"
+          DependsOnTargets="CreateGeneratedAssemblyInfo2InputsCacheFile"
+          Inputs="$(GeneratedAssemblyInfo2InputsCacheFile)"
+          Outputs="$(GeneratedAssemblyInfo2File)">
+    <PropertyGroup>
+      <_Assembly2Line1 Condition="'$(Language)' == 'VB'">&apos; &lt;auto-generated/&gt;</_Assembly2Line1>
+      <_Assembly2Line2 Condition="'$(Language)' == 'VB' and '$(CLSCompliant)' == 'true'">&lt;Assembly: System.CLSCompliant(True)&gt;</_Assembly2Line2>
+      <_Assembly2Line2 Condition="'$(Language)' == 'VB' and '$(CLSCompliant)' == 'false'">&lt;Assembly: System.CLSCompliant(False)&gt;</_Assembly2Line2>
+      <_Assembly2Line3 Condition="'$(Language)' == 'VB' and '$(ComVisible)' == 'true'">&lt;Assembly: System.Runtime.InteropServices.ComVisible(True)&gt;</_Assembly2Line3>
+      <_Assembly2Line3 Condition="'$(Language)' == 'VB' and '$(ComVisible)' == 'false'">&lt;Assembly: System.Runtime.InteropServices.ComVisible(False)&gt;</_Assembly2Line3>
+      <_Assembly2Line1 Condition="'$(Language)' == 'C#'">// &lt;auto-generated/&gt;</_Assembly2Line1>
+      <_Assembly2Line2 Condition="'$(Language)' == 'C#' and '$(CLSCompliant)' == 'true'">[assembly:System.CLSCompliant(true)]</_Assembly2Line2>
+      <_Assembly2Line2 Condition="'$(Language)' == 'C#' and '$(CLSCompliant)' == 'false'">[assembly:System.CLSCompliant(false)]</_Assembly2Line2>
+      <_Assembly2Line3 Condition="'$(Language)' == 'C#' and '$(ComVisible)' == 'true'">[assembly:System.Runtime.InteropServices.ComVisible(true)]</_Assembly2Line3>
+      <_Assembly2Line3 Condition="'$(Language)' == 'C#' and '$(ComVisible)' == 'false'">[assembly:System.Runtime.InteropServices.ComVisible(false)]</_Assembly2Line3>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Remove="$(GeneratedAssemblyInfo2File)" />
+    </ItemGroup>
+    <WriteLinesToFile Lines="$(_Assembly2Line1);$(_Assembly2Line2);$(_Assembly2Line3)" File="$(GeneratedAssemblyInfo2File)" Overwrite="True" />
+    <ItemGroup>
+      <FileWrites Include="$(GeneratedAssemblyInfo2File)" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Include="$(GeneratedAssemblyInfo2File)" />
+    </ItemGroup>
+  </Target>
+</Project>

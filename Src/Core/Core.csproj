@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>WiZaRo.CommandLine.Core</AssemblyName>
+    <RootNamespace>WiZaRo.CommandLine</RootNamespace>
+    <Description>WiZaRo's Command Line Interface core library.</Description>
+  </PropertyGroup>
+</Project>

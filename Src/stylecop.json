@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "indentation": {
+      "indentationSize": 4,
+      "tabSize": 4,
+      "useTabs": false
+    },
+    "readabilityRules": {
+      "allowBuiltInTypeAliases": false
+    },
+    "orderingRules": {
+      "elementOrder": [
+        "static",
+        "kind",
+        "constant",
+        "accessibility",
+        "readonly"
+      ],
+      "systemUsingDirectivesFirst": true,
+      "usingDirectivesPlacement": "outsideNamespace",
+      "blankLinesBetweenUsingGroups": "omit"
+    },
+    "namingRules": {
+      "allowCommonHungarianPrefixes": true,
+      "includeInferredTupleElementNames": true,
+      "tupleElementNameCasing": "PascalCase"
+    },
+    "maintainabilityRules": {
+      "topLevelTypes": [
+        "delegate",
+        "enum",
+        "interface",
+        "struct",
+        "class"
+      ]
+    },
+    "layoutRules": {
+      "newlineAtEndOfFile": "omit",
+      "allowConsecutiveUsings": true
+    },
+    "documentationRules": {
+      "copyrightText": "© 2020 Wilhelm Zapiain Rodríguez.\nLicensed under the MIT license. See the LICENSE file in the project root for full license information.",
+      "xmlHeader": false,
+      "documentInterfaces": true,
+      "documentExposedElements": true,
+      "documentInternalElements": true,
+      "documentPrivateElements": true,
+      "documentPrivateFields": true,
+      "documentationCulture": "en-US",
+      "fileNamingConvention": "stylecop",
+      "excludeFromPunctuationCheck": [
+        "seealso"
+      ]
+    }
+  }
+}

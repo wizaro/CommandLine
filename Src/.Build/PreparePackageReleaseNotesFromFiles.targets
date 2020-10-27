@@ -1,0 +1,7 @@
+﻿<Project>
+  <Target Name="PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
+      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/../PackageReleaseNotes.txt"))</PackageReleaseNotes>
+    </PropertyGroup>
+  </Target>
+</Project>

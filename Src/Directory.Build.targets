@@ -1,0 +1,4 @@
+﻿<Project>
+  <Import Project=".Build\PreparePackageReleaseNotesFromFiles.targets" />
+  <Import Project=".Build\GenerateComplementaryAssemblyInfo.targets" />
+</Project>

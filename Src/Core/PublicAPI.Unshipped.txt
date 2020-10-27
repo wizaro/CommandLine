@@ -1,1 +1,149 @@
 ﻿#nullable enable
+WiZaRo.CommandLine.AliasCollection
+WiZaRo.CommandLine.ArgumentBuilder<T>
+WiZaRo.CommandLine.ArgumentBuilder<T>.ArgumentBuilder(string! name) -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Arity.get -> System.CommandLine.IArgumentArity?
+WiZaRo.CommandLine.ArgumentBuilder<T>.Arity.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Build() -> System.CommandLine.Argument!
+WiZaRo.CommandLine.ArgumentBuilder<T>.BuildConfigurations.get -> WiZaRo.CommandLine.ArgumentConfigurationCollection!
+WiZaRo.CommandLine.ArgumentBuilder<T>.DefaultFactory.get -> System.Func<T>?
+WiZaRo.CommandLine.ArgumentBuilder<T>.DefaultFactory.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Description.get -> string?
+WiZaRo.CommandLine.ArgumentBuilder<T>.Description.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.IsHidden.get -> bool
+WiZaRo.CommandLine.ArgumentBuilder<T>.IsHidden.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Name.get -> string!
+WiZaRo.CommandLine.ArgumentBuilder<T>.Name.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Parser.get -> System.CommandLine.Parsing.ParseArgument<T>?
+WiZaRo.CommandLine.ArgumentBuilder<T>.Parser.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Suggestions.get -> WiZaRo.CommandLine.SuggestionSourceCollection!
+WiZaRo.CommandLine.ArgumentBuilder<T>.UseParserAsDefaultFactory.get -> bool
+WiZaRo.CommandLine.ArgumentBuilder<T>.UseParserAsDefaultFactory.set -> void
+WiZaRo.CommandLine.ArgumentBuilder<T>.Validators.get -> WiZaRo.CommandLine.ArgumentValidatorCollection!
+WiZaRo.CommandLine.ArgumentBuilderCollection
+WiZaRo.CommandLine.ArgumentBuilderExtensions
+WiZaRo.CommandLine.ArgumentConfigurationCollection
+WiZaRo.CommandLine.ArgumentValidatorCollection
+WiZaRo.CommandLine.CommandBuilder
+WiZaRo.CommandLine.CommandBuilder.Arguments.get -> WiZaRo.CommandLine.ArgumentBuilderCollection!
+WiZaRo.CommandLine.CommandBuilder.Build() -> System.CommandLine.Command!
+WiZaRo.CommandLine.CommandBuilder.BuildConfigurations.get -> WiZaRo.CommandLine.CommandConfigurationCollection!
+WiZaRo.CommandLine.CommandBuilder.CommandBuilder() -> void
+WiZaRo.CommandLine.CommandBuilder.CommandBuilder(string! name) -> void
+WiZaRo.CommandLine.CommandBuilder.Commands.get -> WiZaRo.CommandLine.CommandBuilderCollection!
+WiZaRo.CommandLine.CommandBuilder.Description.get -> string?
+WiZaRo.CommandLine.CommandBuilder.Description.set -> void
+WiZaRo.CommandLine.CommandBuilder.GlobalOptions.get -> WiZaRo.CommandLine.OptionBuilderCollection!
+WiZaRo.CommandLine.CommandBuilder.Handler.get -> System.CommandLine.Invocation.ICommandHandler?
+WiZaRo.CommandLine.CommandBuilder.Handler.set -> void
+WiZaRo.CommandLine.CommandBuilder.IsRoot.get -> bool
+WiZaRo.CommandLine.CommandBuilder.Name.get -> string?
+WiZaRo.CommandLine.CommandBuilder.Name.set -> void
+WiZaRo.CommandLine.CommandBuilder.Options.get -> WiZaRo.CommandLine.OptionBuilderCollection!
+WiZaRo.CommandLine.CommandBuilder.Validators.get -> WiZaRo.CommandLine.CommandValidatorCollection!
+WiZaRo.CommandLine.CommandBuilderCollection
+WiZaRo.CommandLine.CommandBuilderExtensions
+WiZaRo.CommandLine.CommandConfigurationCollection
+WiZaRo.CommandLine.CommandValidatorCollection
+WiZaRo.CommandLine.Fluent
+WiZaRo.CommandLine.IArgumentBuilder
+WiZaRo.CommandLine.IArgumentBuilder.Build() -> System.CommandLine.Argument!
+WiZaRo.CommandLine.ICommandBuilder
+WiZaRo.CommandLine.ICommandBuilder.Build() -> System.CommandLine.Command!
+WiZaRo.CommandLine.ICommandBuilder.IsRoot.get -> bool
+WiZaRo.CommandLine.IOptionBuilder
+WiZaRo.CommandLine.IOptionBuilder.Build() -> System.CommandLine.Option!
+WiZaRo.CommandLine.OptionBuilder<T>
+WiZaRo.CommandLine.OptionBuilder<T>.Aliases.get -> WiZaRo.CommandLine.AliasCollection!
+WiZaRo.CommandLine.OptionBuilder<T>.ArgumentValidators.get -> WiZaRo.CommandLine.ArgumentValidatorCollection!
+WiZaRo.CommandLine.OptionBuilder<T>.Arity.get -> System.CommandLine.IArgumentArity?
+WiZaRo.CommandLine.OptionBuilder<T>.Arity.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.Build() -> System.CommandLine.Option!
+WiZaRo.CommandLine.OptionBuilder<T>.BuildConfigurations.get -> WiZaRo.CommandLine.OptionConfigurationCollection!
+WiZaRo.CommandLine.OptionBuilder<T>.DefaultFactory.get -> System.Func<T>?
+WiZaRo.CommandLine.OptionBuilder<T>.DefaultFactory.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.Description.get -> string?
+WiZaRo.CommandLine.OptionBuilder<T>.Description.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.IsHidden.get -> bool
+WiZaRo.CommandLine.OptionBuilder<T>.IsHidden.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.IsRequired.get -> bool
+WiZaRo.CommandLine.OptionBuilder<T>.IsRequired.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.OptionBuilder(System.Collections.Generic.IEnumerable<string!>! aliases) -> void
+WiZaRo.CommandLine.OptionBuilder<T>.OptionBuilder(params string![]! aliases) -> void
+WiZaRo.CommandLine.OptionBuilder<T>.OptionValidators.get -> WiZaRo.CommandLine.OptionValidatorCollection!
+WiZaRo.CommandLine.OptionBuilder<T>.Parser.get -> System.CommandLine.Parsing.ParseArgument<T>?
+WiZaRo.CommandLine.OptionBuilder<T>.Parser.set -> void
+WiZaRo.CommandLine.OptionBuilder<T>.Suggestions.get -> WiZaRo.CommandLine.SuggestionSourceCollection!
+WiZaRo.CommandLine.OptionBuilder<T>.UseParserAsDefaultFactory.get -> bool
+WiZaRo.CommandLine.OptionBuilder<T>.UseParserAsDefaultFactory.set -> void
+WiZaRo.CommandLine.OptionBuilderCollection
+WiZaRo.CommandLine.OptionBuilderExtensions
+WiZaRo.CommandLine.OptionConfigurationCollection
+WiZaRo.CommandLine.OptionValidatorCollection
+WiZaRo.CommandLine.SuggestionSourceCollection
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddBuildConfiguration<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.Action<System.CommandLine.Argument!>! configuration) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.Collections.Generic.IEnumerable<string!>! suggestions) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.CommandLine.Suggestions.ISuggestionSource! suggestionSource) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.CommandLine.Suggestions.SuggestDelegate! suggestionsSource) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, params string![]! suggestions) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.AddValidator<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.CommandLine.Parsing.ValidateSymbol<System.CommandLine.Parsing.ArgumentResult!>! validator) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.ArgumentBuilder<System.IO.DirectoryInfo!>! builder) -> WiZaRo.CommandLine.ArgumentBuilder<System.IO.DirectoryInfo!>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.ArgumentBuilder<System.IO.FileInfo!>! builder) -> WiZaRo.CommandLine.ArgumentBuilder<System.IO.FileInfo!>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.ArgumentBuilder<System.IO.FileSystemInfo!>! builder) -> WiZaRo.CommandLine.ArgumentBuilder<System.IO.FileSystemInfo!>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.ExistingOnly<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.GetDefaultFrom<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.Func<T>! defaultFactory) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.Hide<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, bool value = true) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.LegalFilePathsOnly<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.LimitTo<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.Collections.Generic.IEnumerable<string!>! values) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.LimitTo<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, params string![]! values) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.ParseWith<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.CommandLine.Parsing.ParseArgument<T>! parser, bool useAsDefaultFactory = false) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.SetArity<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, System.CommandLine.IArgumentArity? arity) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.SetDescription<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, string? description) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.ArgumentBuilderExtensions.SetName<T>(this WiZaRo.CommandLine.ArgumentBuilder<T>! builder, string! name) -> WiZaRo.CommandLine.ArgumentBuilder<T>!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddArgument<T>(this WiZaRo.CommandLine.CommandBuilder! builder, string! name, System.Action<WiZaRo.CommandLine.ArgumentBuilder<T>!>! argumentBuilder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddArgumentFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Argument! argument) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddArgumentFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.Func<System.CommandLine.Argument!>! argumentFactory) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddArgumentFrom<TArgument>(this WiZaRo.CommandLine.CommandBuilder! builder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddBuildConfiguration(this WiZaRo.CommandLine.CommandBuilder! builder, System.Action<System.CommandLine.Command!>! configuration) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddCommand(this WiZaRo.CommandLine.CommandBuilder! builder, string! name, System.Action<WiZaRo.CommandLine.CommandBuilder!>! commandBuilder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddCommandFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Command! command) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddCommandFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.Func<System.CommandLine.Command!>! commandFactory) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddCommandFrom<TCommand>(this WiZaRo.CommandLine.CommandBuilder! builder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddGlobalOption<T>(this WiZaRo.CommandLine.CommandBuilder! builder, System.Collections.Generic.IEnumerable<string!>! aliases, System.Action<WiZaRo.CommandLine.OptionBuilder<T>!>! optionBuilder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddGlobalOptionFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Option! option) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddGlobalOptionFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.Func<System.CommandLine.Option!>! optionFactory) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddGlobalOptionFrom<TOption>(this WiZaRo.CommandLine.CommandBuilder! builder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddOption<T>(this WiZaRo.CommandLine.CommandBuilder! builder, System.Collections.Generic.IEnumerable<string!>! aliases, System.Action<WiZaRo.CommandLine.OptionBuilder<T>!>! optionBuilder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddOptionFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Option! option) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddOptionFrom(this WiZaRo.CommandLine.CommandBuilder! builder, System.Func<System.CommandLine.Option!>! optionFactory) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddOptionFrom<TOption>(this WiZaRo.CommandLine.CommandBuilder! builder) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.AddValidator(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Parsing.ValidateSymbol<System.CommandLine.Parsing.CommandResult!>! validator) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.SetDescription(this WiZaRo.CommandLine.CommandBuilder! builder, string! description) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.SetName(this WiZaRo.CommandLine.CommandBuilder! builder, string! name) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.CommandBuilderExtensions.UseHandler(this WiZaRo.CommandLine.CommandBuilder! builder, System.CommandLine.Invocation.ICommandHandler! handler) -> WiZaRo.CommandLine.CommandBuilder!
+static WiZaRo.CommandLine.Fluent.DefineCommandLine(System.Action<WiZaRo.CommandLine.CommandBuilder!>! rootBuilder) -> System.CommandLine.Builder.CommandLineBuilder!
+static WiZaRo.CommandLine.Fluent.DefineCommandLineFrom(System.CommandLine.RootCommand! rootCommand) -> System.CommandLine.Builder.CommandLineBuilder!
+static WiZaRo.CommandLine.Fluent.DefineCommandLineFrom(System.Func<System.CommandLine.RootCommand!>! rootFactory) -> System.CommandLine.Builder.CommandLineBuilder!
+static WiZaRo.CommandLine.Fluent.DefineCommandLineFrom<TRoot>() -> System.CommandLine.Builder.CommandLineBuilder!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddAliases<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.Collections.Generic.IEnumerable<string!>! aliases) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddAliases<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, params string![]! aliases) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddArgumentValidator<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.Parsing.ValidateSymbol<System.CommandLine.Parsing.ArgumentResult!>! validator) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddBuildConfiguration<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.Action<System.CommandLine.Option!>! configuration) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.Collections.Generic.IEnumerable<string!>! suggestions) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.Suggestions.ISuggestionSource! suggestionSource) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.Suggestions.SuggestDelegate! suggestionsSource) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddSuggestions<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, params string![]! suggestions) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.AddValidator<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.Parsing.ValidateSymbol<System.CommandLine.Parsing.OptionResult!>! validator) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.OptionBuilder<System.IO.DirectoryInfo!>! builder) -> WiZaRo.CommandLine.OptionBuilder<System.IO.DirectoryInfo!>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.OptionBuilder<System.IO.FileInfo!>! builder) -> WiZaRo.CommandLine.OptionBuilder<System.IO.FileInfo!>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.ExistingOnly(this WiZaRo.CommandLine.OptionBuilder<System.IO.FileSystemInfo!>! builder) -> WiZaRo.CommandLine.OptionBuilder<System.IO.FileSystemInfo!>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.ExistingOnly<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.GetDefaultFrom<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.Func<T>! defaultFactory) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.Hide<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, bool value = true) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.LegalFilePathsOnly<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.LimitTo<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.Collections.Generic.IEnumerable<string!>! values) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.LimitTo<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, params string![]! values) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.ParseWith<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.Parsing.ParseArgument<T>! parser, bool useAsDefaultFactory = false) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.Require<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, bool value = true) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.SetArity<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, System.CommandLine.IArgumentArity? arity) -> WiZaRo.CommandLine.OptionBuilder<T>!
+static WiZaRo.CommandLine.OptionBuilderExtensions.SetDescription<T>(this WiZaRo.CommandLine.OptionBuilder<T>! builder, string! description) -> WiZaRo.CommandLine.OptionBuilder<T>!

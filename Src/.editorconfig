@@ -423,9 +423,6 @@ dotnet_diagnostic.CA1070.severity = warning
 # CA1200: Avoid using cref tags with a prefix
 dotnet_diagnostic.CA1200.severity = warning
 
-# CA1417: Do not use 'OutAttribute' on string parameters for P/Invokes
-dotnet_diagnostic.CA1417.severity = warning
-
 # CA1303: Do not pass literals as localized parameters
 dotnet_diagnostic.CA1303.severity = warning
 dotnet_code_quality.CA1303.use_naming_heuristic = false
@@ -445,8 +442,17 @@ dotnet_diagnostic.CA1308.severity = warning
 # CA1309: Use ordinal stringcomparison
 dotnet_diagnostic.CA1309.severity = warning
 
+# CA1310: Specify StringComparison for correctness
+dotnet_diagnostic.CA1310.severity = none
+
 # CA1401: P/Invokes should not be visible
 dotnet_diagnostic.CA1401.severity = warning
+
+# CA1416: Validate platform compatibility
+dotnet_diagnostic.CA1416.severity = warning
+
+# CA1417: Do not use 'OutAttribute' on string parameters for P/Invokes
+dotnet_diagnostic.CA1417.severity = warning
 
 # CA1501: Avoid excessive inheritance
 dotnet_diagnostic.CA1501.severity = suggestion

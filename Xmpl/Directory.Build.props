@@ -1,0 +1,41 @@
+﻿<Project>
+  <PropertyGroup Label="Assembly">
+    <Copyright>© 2020 Wilhelm Zapiain Rodríguez. Licensed under the MIT license. See the LICENSE file for full license information.</Copyright>
+    <Company>WiZaRo</Company>
+    <Product>WiZaRo's Command Line Interface Library Examples</Product>
+    <Authors>WiZaRo</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Language">
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Label="OutputPaths">
+    <BaseIntermediateOutputPath>..\..\Obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>..\..\Bin\$(MSBuildProjectName)\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup Label="Analyzers">
+    <PackageReference Include="IDisposableAnalyzers" Version="3.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Label="AnalyzerFiles">
+    <AdditionalFiles Include="..\stylecop.json" />
+  </ItemGroup>
+</Project>

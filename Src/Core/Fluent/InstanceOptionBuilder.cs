@@ -21,7 +21,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="InstanceOptionBuilder"/> class.
         /// </summary>
         /// <param name="option">Option instance.</param>
-        public InstanceOptionBuilder(Option option)
+        internal InstanceOptionBuilder(Option option)
         {
             this.option = option;
         }

@@ -23,7 +23,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="AnonymousSuggestionSource"/> class.
         /// </summary>
         /// <param name="suggest">Delegate that generates the suggestions.</param>
-        public AnonymousSuggestionSource(SuggestDelegate suggest)
+        internal AnonymousSuggestionSource(SuggestDelegate suggest)
         {
             this.suggest = suggest;
         }

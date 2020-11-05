@@ -24,7 +24,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="HostServicesBinder"/> class.
         /// </summary>
         /// <param name="bindingContext">The binding context.</param>
-        public HostServicesBinder(BindingContext bindingContext)
+        internal HostServicesBinder(BindingContext bindingContext)
         {
             this.bindingContext = bindingContext;
         }

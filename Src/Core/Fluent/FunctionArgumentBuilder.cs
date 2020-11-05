@@ -22,7 +22,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="FunctionArgumentBuilder"/> class.
         /// </summary>
         /// <param name="argumentFactory">Argument factory.</param>
-        public FunctionArgumentBuilder(Func<Argument> argumentFactory)
+        internal FunctionArgumentBuilder(Func<Argument> argumentFactory)
         {
             this.argumentFactory = argumentFactory;
         }

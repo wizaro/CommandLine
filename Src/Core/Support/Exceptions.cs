@@ -16,7 +16,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentBuilderIsRoot(string paramName)
+        internal static ArgumentException BuildArgumentBuilderIsRoot(string paramName)
         {
             return new ArgumentException(Resources.ErrorBuilderIsRoot, paramName);
         }
@@ -26,7 +26,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentCommandIsRoot(string paramName)
+        internal static ArgumentException BuildArgumentCommandIsRoot(string paramName)
         {
             return new ArgumentException(Resources.ErrorCommandIsRoot, paramName);
         }
@@ -37,7 +37,7 @@ namespace WiZaRo.CommandLine.Support
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <param name="innerException">The exception that is the cause of the current exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentContainsInvalidAlias(string paramName, Exception? innerException = default)
+        internal static ArgumentException BuildArgumentContainsInvalidAlias(string paramName, Exception? innerException = default)
         {
             return new ArgumentException(Resources.ErrorCollectionContainsInvalidAlias, paramName, innerException);
         }
@@ -47,7 +47,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentEmptyAliases(string paramName)
+        internal static ArgumentException BuildArgumentEmptyAliases(string paramName)
         {
             return new ArgumentException(Resources.ErrorAliasesCollectionEmpty, paramName);
         }
@@ -57,7 +57,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static Exception BuildArgumentInvalidAlias(string paramName)
+        internal static Exception BuildArgumentInvalidAlias(string paramName)
         {
             return new ArgumentException(Resources.ErrorAliasInvalid, paramName);
         }
@@ -67,7 +67,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentInvalidArgumentName(string paramName)
+        internal static ArgumentException BuildArgumentInvalidArgumentName(string paramName)
         {
             return new ArgumentException(Resources.ErrorArgumentNameInvalid, paramName);
         }
@@ -77,7 +77,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the exception.</param>
         /// <returns><see cref="ArgumentException" /> with the desired data.</returns>
-        public static ArgumentException BuildArgumentInvalidCommandName(string paramName)
+        internal static ArgumentException BuildArgumentInvalidCommandName(string paramName)
         {
             return new ArgumentException(Resources.ErrorCommandNameInvalid, paramName);
         }
@@ -87,7 +87,7 @@ namespace WiZaRo.CommandLine.Support
         /// </summary>
         /// <param name="paramName">The name of the parameter that caused the current exception.</param>
         /// <returns><see cref="ArgumentNullException" /> with the desired data.</returns>
-        public static ArgumentNullException BuildArgumentNull(string paramName)
+        internal static ArgumentNullException BuildArgumentNull(string paramName)
         {
             return new ArgumentNullException(paramName);
         }
@@ -96,7 +96,7 @@ namespace WiZaRo.CommandLine.Support
         ///     Builds an <see cref="InvalidOperationException"/> when trying to remove the last alias from a collection.
         /// </summary>
         /// <returns><see cref="InvalidOperationException"/> with the desired data.</returns>
-        public static InvalidOperationException BuildInvalidOperationCannotRemoveLastAlias()
+        internal static InvalidOperationException BuildInvalidOperationCannotRemoveLastAlias()
         {
             return new InvalidOperationException(Resources.ErrorAliasesCollectionLastRemoved);
         }
@@ -105,7 +105,7 @@ namespace WiZaRo.CommandLine.Support
         ///     Builds an <see cref="InvalidOperationException"/> when a builder would build a root command.
         /// </summary>
         /// <returns><see cref="InvalidOperationException"/> with the desired data.</returns>
-        public static InvalidOperationException BuildInvalidOperationBuiltRootCommand()
+        internal static InvalidOperationException BuildInvalidOperationBuiltRootCommand()
         {
             return new InvalidOperationException(Resources.ErrorBuiltRootCommand);
         }

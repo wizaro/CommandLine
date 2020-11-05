@@ -22,7 +22,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="FunctionOptionBuilder"/> class.
         /// </summary>
         /// <param name="optionFactory">Option factory.</param>
-        public FunctionOptionBuilder(Func<Option> optionFactory)
+        internal FunctionOptionBuilder(Func<Option> optionFactory)
         {
             this.optionFactory = optionFactory;
         }

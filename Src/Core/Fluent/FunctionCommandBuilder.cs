@@ -23,7 +23,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="FunctionCommandBuilder"/> class.
         /// </summary>
         /// <param name="commandFactory">Command factory.</param>
-        public FunctionCommandBuilder(Func<Command> commandFactory)
+        internal FunctionCommandBuilder(Func<Command> commandFactory)
         {
             this.commandFactory = commandFactory;
         }

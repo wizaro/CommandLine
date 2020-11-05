@@ -21,7 +21,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="InstanceCommandBuilder"/> class.
         /// </summary>
         /// <param name="command">Command instance.</param>
-        public InstanceCommandBuilder(Command command)
+        internal InstanceCommandBuilder(Command command)
         {
             this.command = command;
         }

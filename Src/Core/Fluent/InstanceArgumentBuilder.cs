@@ -21,7 +21,7 @@ namespace WiZaRo.CommandLine.Fluent
         ///     Initializes a new instance of the <see cref="InstanceArgumentBuilder"/> class.
         /// </summary>
         /// <param name="argument">Argument instance.</param>
-        public InstanceArgumentBuilder(Argument argument)
+        internal InstanceArgumentBuilder(Argument argument)
         {
             this.argument = argument;
         }

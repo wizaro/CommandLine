@@ -20,6 +20,10 @@ namespace WiZaRo.CommandLine.Fluent
         /// <param name="binder">The action to integrate host services to the binding process.</param>
         /// <returns>The <paramref name="builder"/> to allow chaining.</returns>
         /// <exception cref="ArgumentNullException">Either <paramref name="builder"/> or <paramref name="binder"/> is <see langword="null"/>.</exception>
+        /// <example>
+        ///     <para>The following example shows how use host services during command binding:</para>
+        ///     <code source="..\..\..\Xmpl\Core\Fluent\FluentExample.cs" lang="C#" />
+        /// </example>
         [CLSCompliant(false)]
         public static CommandLineBuilder FromHostServices(this CommandLineBuilder builder, Action<IHostServicesBinder> binder)
         {

@@ -35,16 +35,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{BDF7066C-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{5E51341F-EB26-4B58-B955-F9BD0E2F445E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Xmpl", "..\Xmpl\Core\Core.Xmpl.csproj", "{A5D2672B-C8E9-4D1C-BE31-ACD6E62B3FE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Examples|Any CPU = Examples|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Examples|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Examples|Any CPU.Build.0 = Debug|Any CPU
 		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E51341F-EB26-4B58-B955-F9BD0E2F445E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D2672B-C8E9-4D1C-BE31-ACD6E62B3FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D2672B-C8E9-4D1C-BE31-ACD6E62B3FE7}.Examples|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D2672B-C8E9-4D1C-BE31-ACD6E62B3FE7}.Examples|Any CPU.Build.0 = Debug|Any CPU
+		{A5D2672B-C8E9-4D1C-BE31-ACD6E62B3FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

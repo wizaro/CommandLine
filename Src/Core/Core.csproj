@@ -1,8 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>WiZaRo.CommandLine.Core</AssemblyName>
     <RootNamespace>WiZaRo.CommandLine</RootNamespace>
     <Description>WiZaRo's Command Line Interface core library.</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Support\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Support\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>WiZaRo.CommandLine.Support</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

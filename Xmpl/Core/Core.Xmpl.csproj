@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>WiZaRo.CommandLine.Core.Xmpl</AssemblyName>
+    <RootNamespace>WiZaRo.CommandLine.Examples</RootNamespace>
+    <Description>WiZaRo's Command Line Interface core library.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine.Hosting" Version="0.3.0-alpha.20371.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Core\Core.csproj" />
+  </ItemGroup>
+</Project>

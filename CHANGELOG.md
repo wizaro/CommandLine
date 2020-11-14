@@ -21,7 +21,9 @@ The format is based on [Keep a Changelog], and this project adheres to [Semantic
 - Some bug fixed.
 -->
 
-## [Unreleased]
+## [0.1.0]
+### Added
+- WiZaRo.CommandLine.Fluent namespace, a fluent API for System.CommandLine.
 
 ## [0.0.0] - 2020-10-26
 - Project creation.

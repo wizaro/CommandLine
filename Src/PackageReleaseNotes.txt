@@ -1,5 +1,5 @@
 ﻿## What's New
-- None.
+- WiZaRo.CommandLine.Fluent namespace, a fluent API for System.CommandLine.
 
 ## Bug Fixes
 - None.

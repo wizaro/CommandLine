@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7FD121E2-26CB-4D40-B26E-7EA325DA30D4}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
+		Directory.Build.rsp = Directory.Build.rsp
 		Directory.Build.targets = Directory.Build.targets
 		.Build\GenerateComplementaryAssemblyInfo.targets = .Build\GenerateComplementaryAssemblyInfo.targets
 		.Build\PreparePackageReleaseNotesFromFiles.targets = .Build\PreparePackageReleaseNotesFromFiles.targets

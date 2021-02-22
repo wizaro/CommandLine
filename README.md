@@ -9,7 +9,7 @@ Support library to build CLI applications in .Net.
 <!--This section contains a list of the features this project provides, including differentiating factors to alternatives.-->
 - WiZaRo.CommandLine.Fluent: Provides fluent extensions for [System.CommandLine].
 
-See the latest changes in the [Change Log].
+See the latest changes in the [Changelog].
 
 <!--## Background-->
 <!--This section contains the background for the project, including context and links to references that might be needed to understand it.-->
@@ -80,7 +80,7 @@ Thanks to all contributors at [System.CommandLine].
 [MIT] - [Summary]
 
 <!--Links-->
-[Change Log]: ./CHANGELOG.md
+[Changelog]: ./CHANGELOG.md
 [Contribution Guidelines]: ./CONTRIBUTING.md
 [Fluent Example]: ./Xmpl/Core/Fluent/FluentExample.cs
 [Issues]: https://github.com/wizaro/CommandLine/issues

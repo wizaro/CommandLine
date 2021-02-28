@@ -3,7 +3,7 @@
     <Copyright>© 2020 Wilhelm Zapiain Rodríguez. Licensed under the MIT license. See the LICENSE file for full license information.</Copyright>
     <Company>WiZaRo</Company>
     <Product>WiZaRo's Command Line Interface Library</Product>
-    <Authors>WiZaRo</Authors>
+    <Authors>WiZaRo;WilhelmZapiain</Authors>
   </PropertyGroup>
 
   <PropertyGroup Label="Package">

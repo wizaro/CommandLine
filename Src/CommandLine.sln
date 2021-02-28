@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7FD121E2
 		Directory.Build.rsp = Directory.Build.rsp
 		Directory.Build.targets = Directory.Build.targets
 		.Build\GenerateComplementaryAssemblyInfo.targets = .Build\GenerateComplementaryAssemblyInfo.targets
-		.Build\PreparePackageReleaseNotesFromFiles.targets = .Build\PreparePackageReleaseNotesFromFiles.targets
+		.Build\PreparePackageReleaseNotesFromFile.targets = .Build\PreparePackageReleaseNotesFromFile.targets
 		PublicKey.snk = PublicKey.snk
 	EndProjectSection
 EndProject
@@ -30,7 +30,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{BDF7066C-A
 		..\CODE_OF_CONDUCT.md = ..\CODE_OF_CONDUCT.md
 		..\CONTRIBUTING.md = ..\CONTRIBUTING.md
 		..\LICENSE = ..\LICENSE
-		PackageReleaseNotes.txt = PackageReleaseNotes.txt
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
